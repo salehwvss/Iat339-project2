@@ -1,0 +1,45 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;    /* Will set the horiontal allignment to center*/
+  padding: 20px 0;
+}
+
+.header-wrapper{
+  width: 900px;
+  display: flex;
+  /*justify-content: space-between;*/
+}
+
+.main-nav{
+  display: flex;
+  /*justify-content: flex-end;*/
+  margin-left: 20em;
+}
+#MyAccount{
+  margin-left: 2em;
+}
+
+.home-gallery-slider{
+  display: flex;
+  align-items: center;          /* Will set the vertical allignment to center*/
+  justify-content: center;     /* Will set the horiontal allignment to center*/
+  margin-top: 2em;
+}
+
+.footer-contents{
+  display: flex;
+  justify-content: space-between;
+   flex: 1;                /*  stretch to match the width of footer */
+
+}
+
+.footer-Contact, .footer-info{
+  background-color: #1a1b1c;
+  flex: initial;
+  width: 300px;
+}

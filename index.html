@@ -15,8 +15,8 @@
         <img class="logo-img" src="img/img-placeholder.gif"> <!--image of logo -->
       </div>
       <div class="main-nav">       <!-- //////////////////////////////////Main navigation on top -->
-        <a href="#"> Shop</a>
-        <a href="#" id="MyAccount"> My Account</a>
+        <a class="shop-button "href="#"> Shop</a>
+        <a class="account-button "href="#" id="MyAccount"> My Account</a>
       </div>      <!-- //////////////////////////////////Main navigation on top closed -->
     </div>     <!-- top header containing logo, nav, account and cart  closed -->
   </header>   <!-- ///////////////////////////////////////////// top header of my site closed-->
@@ -24,32 +24,76 @@
   <div class="home-gallery-slider">  <!-- a section showing product images in slider -->
     <img class="mySlides" src="img/gallery-placeholder.jpg">
   </div>
+
   <div class="home-wrapper"> <!-- a section containing products and tabs -->
-    <h1>Products</h1>
-    <hr class="home-hr">  <!-- a line in home below products -->
-    <div class="home-products"> <!-- a section containing only products  -->
+    <div class="home-products-wrapper"> <!-- a section containing only products  -->
+      <div class="home-products-text">
+        <h1>Products</h1>
+        <hr class="home-hr">  <!-- a line in home below products -->
+      </div>
     </div>
   </div>
-  <footer class="footer-container">  <!-- ///////////////////////////////////////////////Footer -->
-    <div class="footer-contents">       <!-- all info, address and links in the footer -->
-      <div class="footer-info">         <!-- all texts in information -->
-      <h3> Information </h3>
-      <a href="#">FAQ</a>
-      <a href="#">Terms</a>
-      <a href="#">Support</a>
+
+  <div class="home-wrapper"> <!-- a section containing products and tabs -->
+    <div class="home-products-wrapper"> <!-- a section containing only products  -->
+      <div class="home-products first-item">
+      <img class="products-img"src='img/galaxys8.jpg'/>
+      <h4>Product description</h4>
       </div>
-      <div class="footer-address">
-        <h3> Address </h3>
-        <p>This is the address</p>
+      <div class="home-products">
+        <img class="products-img"src='img/galaxys8.jpg'/>
+        <h4>Product description</h4>
       </div>
-      <div class="footer-Contact">
-        <h3> Contact Us </h3>
-        <a href="mailto:salehe@sfu.ca.com">Email</a>
-        <a href="tel:+16047792949">XXX-XXX-XXXX</a>
+      <div class="home-products">
+        <img class="products-img"src='img/galaxys8.jpg'/>
+        <h4>Product description</h4>
+      </div>
+      <div class="home-products">
+        <img class="products-img"src='img/galaxys8.jpg'/>
+        <h4>Product description</h4>
+      </div>
+      <div class="home-products">
+        <img class="products-img"src='img/galaxys8.jpg'/>
+        <h4>Product description</h4>
+      </div>
+      <div class="home-products">
+        <img class="products-img"src='img/galaxys8.jpg'/>
+        <h4>Product description</h4>
+      </div>
+      <div class="home-products">
+        <img class="products-img"src='img/galaxys8.jpg'/>
+        <h4>Product description</h4>
+      </div>
+      <div class="home-products">
+        <img class="products-img"src='img/galaxys8.jpg'/>
+        <h4>Product description</h4>
+      </div>
+      <div class="home-products">
+        <img class="products-img"src='img/galaxys8.jpg'/>
+        <h4>Product description</h4>
       </div>
     </div>
-  </footer>   <!-- ///////////////////////////////////////////////Footer closed-->
+  </div>
 
+  <footer class="footer-container">  <!-- ///////////////////////////////////////////////Footer -->
+    <div class="footer-contents">       <!-- all info, address and links in the footer -->
+     <ul class="footer-info">         <!-- all texts in information -->
+      <h3> Information </h3>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Support</a></li>
+     </ul>
+      <ul class="footer-address">
+        <h3> Address </h3>
+        <li><p id="address">This is the address</p></li>
+      </ul>
+      <ul class="footer-Contact">
+        <h3> Contact Us </h3>
+        <li><a href="mailto:salehe@sfu.ca.com">Email</a></li>
+        <li><a href="tel:+16047792949">XXX-XXX-XXXX</a></li>
+      </ul>
+    </div>
+  </footer>   <!-- ///////////////////////////////////////////////Footer closed-->
 
 </body>
 </html>

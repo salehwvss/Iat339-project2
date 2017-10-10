@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-
+  margin-bottom: 0;
 
 }
 
@@ -15,7 +15,26 @@ h2 {
 }
 
 h3 {
+  text-decoration: underline;
 
+}
+
+h4{
+  font-size: .7em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a{
+  color:rgba(255,255,255,0.6);
+  text-decoration: none;
+}
+
+a:hover, a:focus{
+  color:rgba(255,255,255,0.9);
+  text-decoration: underline;
 
 }
 
@@ -39,6 +58,36 @@ h3 {
 
 }
 
+.shop-button{
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  background-color: #0b5870;
+  border-radius: 0.25em;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+  text-align: center;
+}
+
+.shop-button:hover, .shop-button:focus {
+  background-color: #3f95af;
+}
+
+
+.account-button{
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  background-color: #0b5870;
+  border-radius: 0.25em;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+text-align: center;
+}
+
+.account-button:hover, .account-button:focus {
+  background-color: #3f95af;
+}
 .logo-img{
   max-width: 150px;
   max-height: 100px;
@@ -59,16 +108,22 @@ h3 {
 .home-wrapper{
 
 
+
 }
 
 .home-hr{
-
-
+  margin-top: 0;
 }
 
 
 .home-products{
 
+
+}
+
+.products-img{
+  max-width: 200px;
+  max-height: 300px;
 
 }
 
@@ -89,14 +144,17 @@ h3 {
 
 
 .footer-info{
-
+  color: #FFF;
 
 }
 
 
 .footer-address{
 
+}
 
+#address{
+  color:rgba(255,255,255,0.6);
 }
 
 

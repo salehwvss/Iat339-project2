@@ -163,16 +163,36 @@ text-align: center;
 
 }
 
-
-.products-wrapper{
-
+.show-more-button{
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  background-color: #0b5870;
+  border-radius: 0.25em;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+  text-align: center;
 
 }
 
+.show-more-button:focus, .show-more-button:hover{
+  background-color: #3f95af;
+}
 
-.products-products{
+.add-to-cart{
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  background-color: #0b5870;
+  border-radius: 0.25em;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+  text-align: center;
 
+}
 
+.add-to-cart, .add-to-cart{
+  background-color: #3f95af;
 }
 
 

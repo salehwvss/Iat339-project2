@@ -3,63 +3,80 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>Product detail</title>
-
   <link rel="stylesheet" href="css/main.css">
-
-
+  <link rel="stylesheet" href="css/flexbox.css">
 </head>
 
 <body>
-  <!-- ///////////////////////////////////////////// top header of my site -->
-  <header class="main-header">
-    <!-- top header containing logo, nav, account and cart -->
-    <div class="header-wrapper">
-      <!-- //////////////////////////////////Main navigation on top -->
-      <div class="main-nav">
-        <a href="#"> Shop</a>
-        <a href="#"> My Account</a>
+  <header class="main-header"> <!-- ///////////////////////////////////////////// top header of my site -->
+    <div class="header-wrapper">    <!-- top header containing logo, nav, account and cart -->
+      <div class="header-logo">      <!-- logo in header -->
+        <img class="logo-img" src="img/img-placeholder.gif"> <!--image of logo -->
       </div>
-      <!-- //////////////////////////////////Main navigation on top closed -->
-    <div class="header-logo">      <!-- logo in header -->
-      <img src="img/img-placeholder.gif">   <!--image of logo -->
-    </div>
-    </div>
-    <!-- top header containing logo, nav, account and cart  closed -->
-  </header>
-  <!-- ///////////////////////////////////////////// top header of my site closed-->
+      <div class="main-nav">       <!-- //////////////////////////////////Main navigation on top -->
+        <a class="shop-button "href="#"> Shop</a>
+        <a class="account-button "href="#" id="MyAccount"> My Account</a>
+      </div>      <!-- //////////////////////////////////Main navigation on top closed -->
+    </div>     <!-- top header containing logo, nav, account and cart  closed -->
+  </header>   <!-- ///////////////////////////////////////////// top header of my site closed-->
 
-  <div class="product-detail-wrapper"> <!-- a section for product detail -->
-    <h1>Product detail</h1>
-    <div class="products-detail-detail"> <!-- a section containing all products  -->
-
+  <div class="home-wrapper"> <!-- a section for products details  -->
+    <div class="home-products-wrapper"> <!-- a section containing product detail  -->
+      <div class="home-products-text">
+        <h1>Product Details</h1>
+        <hr class="home-hr">  <!-- a line in home below products -->
+      </div>
     </div>
   </div>
-  <!-- ///////////////////////////////////////////////Footer -->
-  <footer class="footer-container">
-    <div class="footer-contents">       <!-- all info, address and links in the footer -->
-      <div class="footer-info">         <!-- all texts in information -->
-      <h3> Information </h3>
-      <a href="#">FAQ</a>
-      <a href="#">Terms</a>
-      <a href="#">Support</a>
-      </div>
 
-      <div class="footer-address">
-        <h3> Address </h3>
-        <p>This is the address</p>
+  <div class="home-wrapper"> <!-- a section containing products and tabs -->
+    <div class="products-detail-wrapper"> <!-- a section containing only products  -->
+      <div class="home-products first-item">
+      <img class="products-img"src='img/galaxys8.jpg'/>
       </div>
-
-      <div class="footer-Contact">
-        <h3> Contact Us </h3>
-        <a href="mailto:salehe@sfu.ca.com">Email</a>
-        <a href="tel:+16047792949">XXX-XXX-XXXX</a>
+      <div class="product-detail-description">
+        <h4>Product Name</h4>
+        <h4>Quantity</h4>
+        <a class="add-to-cart"href="#"> Add To Cart</a>   <!--once you click this button, product will be added to cart -->
       </div>
-
     </div>
-  </footer>
-  <!-- ///////////////////////////////////////////////Footer closed-->
+  </div>
+
+  <div class="home-wrapper"> <!-- a section for products details  -->
+    <div class="home-products-wrapper"> <!-- a section containing product detail  -->
+      <div class="home-products-text">
+        <h1>Product Description</h1>
+        <hr class="home-hr">  <!-- a line in home below products -->
+          <div class="description-section">
+            <p> sample description is here <br> More description for galaxy s8 <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-container">  <!-- ///////////////////////////////////////////////Footer -->
+    <div class="footer-contents">       <!-- all info, address and links in the footer -->
+     <ul class="footer-info">         <!-- all texts in information -->
+      <h3>Information</h3>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Support</a></li>
+     </ul>
+      <ul class="footer-address">
+        <h3> Address </h3>
+        <li><p id="address">This is the address</p></li>
+      </ul>
+      <ul class="footer-Contact">
+        <h3> Contact Us </h3>
+        <li><a href="mailto:salehe@sfu.ca.com">Email</a></li>
+        <li><a href="tel:+16047792949">XXX-XXX-XXXX</a></li>
+      </ul>
+    </div>
+  </footer>   <!-- ///////////////////////////////////////////////Footer closed-->
 
 </body>
 </html>

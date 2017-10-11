@@ -9,6 +9,14 @@
   padding: 20px 0;
 }
 
+.description-section{
+  display: flex;
+  justify-content: center;    /* Will set the horiontal allignment to center*/
+  padding: inherit;
+  background-color: #DADAD8;
+
+}
+
 .header-wrapper{
   width: 900px;
   display: flex;
@@ -50,6 +58,24 @@
   border: 1px solid #fff;
   width: 300px;
   height: 300px;
+
+}
+
+.products-detail-wrapper{
+  width: 900px;
+  display: flex;
+  /*justify-content: flex-start;*/
+  /*flex-wrap: wrap;*/
+
+}
+
+.product-detail-description{
+  /*border: 1px solid #fff;*/
+    justify-content: flex-end;
+  width: 300px;
+  height: 300px;
+  margin-left: 50%;
+
 
 }
 

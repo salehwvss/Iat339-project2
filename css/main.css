@@ -133,8 +133,10 @@ text-align: center;
 }
 
 .products-img{
-  max-width: 200px;
-  max-height: 300px;
+  /*width: 250px;*/
+  height: 300px;
+
+
 
 }
 
@@ -202,7 +204,7 @@ text-align: center;
 
 }
 
-.add-to-cart, .add-to-cart{
+.add-to-cart:hover, .add-to-cart:focus{
   background-color: #3f95af;
 }
 

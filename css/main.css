@@ -27,6 +27,17 @@ ul {
   list-style-type: none;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
+div{
+	background-size: contain;
+}
+
+
+
 a{
   color:rgba(255,255,255,0.6);
   text-decoration: none;
@@ -135,9 +146,9 @@ text-align: center;
 
 
 .footer-contents{
-  border: 1px solid #fff;
+  /*border: 1px solid #fff;*/
   background-color: #1a1b1c;
-  height: 200px;
+  /*height: 200px;*/
 
 
 }

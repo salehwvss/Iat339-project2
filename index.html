@@ -12,23 +12,45 @@
   <header class="main-header"> <!-- ///////////////////////////////////////////// top header of my site -->
     <div class="header-wrapper">    <!-- top header containing logo, nav, account and cart -->
       <div class="header-logo">      <!-- logo in header -->
+        <a href="index.html">
         <img class="logo-img" src="img/img-placeholder.gif"> <!--image of logo -->
+        </a>
       </div>
       <div class="main-nav">       <!-- //////////////////////////////////Main navigation on top -->
         <a class="shop-button"href="products.html"> Shop</a>
-        <a class="account-button "href="#"> My Account</a>
+        <a class="account-button "href="login.html"> My Account</a>
       </div>      <!-- //////////////////////////////////Main navigation on top closed -->
     </div>     <!-- top header containing logo, nav, account and cart  closed -->
   </header>   <!-- ///////////////////////////////////////////// top header of my site closed-->
-
+<!-- /////////////////////////////////////////////////////////////////////////////////Gallery auto Slideshow -->
   <div class="home-gallery-slider">  <!-- a section showing product images in slider -->
-    <img class="mySlides" src="img/gallery-placeholder.jpg">
+    <img class="mySlides" src="img/iphone-gal.png">
+    <img class="mySlides" src="img/mimix-gal.jpg" >
+    <img class="mySlides" src="img/galaxys8-gal.jpg">
+    <img class="mySlides" src="img/nexus.jpg">
+    <img class="mySlides" src="img/products/mate10.jpg">
   </div>
+  <script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
 
   <div class="home-wrapper"> <!-- a section containing products and tabs -->
     <div class="home-products-wrapper"> <!-- a section containing only products  -->
       <div class="home-products-text">
-        <h1>Products</h1>
+        <h1>Recent Products</h1>
         <hr class="home-hr">  <!-- a line in home below products -->
       </div>
     </div>
@@ -37,40 +59,40 @@
   <div class="home-wrapper"> <!-- a section containing products and tabs -->
     <div class="home-products-wrapper"> <!-- a section containing only products  -->
       <div class="home-products first-item">
-      <img class="products-img"src='img/products/galaxys8.jpg'/>
-      <h4>Product description</h4>
-      </div>
-      <div class="home-products">
-        <img class="products-img"src='img/products/iphone.jpg'/>
-        <h4>Product description</h4>
-      </div>
-      <div class="home-products">
-        <img class="products-img"src='img/products/mimix.jpg'/>
-        <h4>Product description</h4>
-      </div>
-      <div class="home-products">
-        <img class="products-img"src='img/products/galaxys8.jpg'/>
-        <h4>Product description</h4>
-      </div>
-      <div class="home-products">
-        <img class="products-img"src='img/products/mate10.jpg'/>
-        <h4>Product description</h4>
-      </div>
-      <div class="home-products">
-        <img class="products-img"src='img/products/galaxys8.jpg'/>
-        <h4>Product description</h4>
+      <img class="products-img"src='img/products/iphone.jpg'/>
+      <h4 class="top-margin-0">Apple Iphone 8</h4>
       </div>
       <div class="home-products">
         <img class="products-img"src='img/products/htc.jpg'/>
-        <h4>Product description</h4>
+        <h4 class="top-margin-0">HTC 10</h4>
+      </div>
+      <div class="home-products">
+        <img class="products-img"src='img/products/lgv30.jpg'/>
+        <h4 class="top-margin-0">LG V30</h4>
+      </div>
+      <div class="home-products">
+        <img class="products-img"src='img/products/iphone5.jpg'/>
+        <h4 class="top-margin-0">Apple Iphone 5</h4>
+      </div>
+      <div class="home-products">
+        <img class="products-img"src='img/products/mate10.jpg'/>
+        <h4 class="top-margin-0">Huawei Mate 10</h4>
+      </div>
+      <div class="home-products">
+        <img class="products-img"src='img/products/mimix.jpg'/>
+        <h4 class="top-margin-0">Xiaomi mi mix2</h4>
       </div>
       <div class="home-products">
         <img class="products-img"src='img/products/galaxys8.jpg'/>
-        <h4>Product description</h4>
+        <h4 class="top-margin-0">Samsung Galaxy s8</h4>
       </div>
       <div class="home-products">
-        <img class="products-img"src='img/products/galaxys8.jpg'/>
-        <h4>Product description</h4>
+        <img class="products-img"src='img/products/umidigi-cristal.png'/>
+        <h4 class="top-margin-0">Umidigi Cristal</h4>
+      </div>
+      <div class="home-products">
+        <img class="products-img"src='img/products/galaxy-note8.jpg'/>
+        <h4 class="top-margin-0">Samsung Galaxy Note8</h4>
       </div>
     </div>
   </div>
@@ -79,18 +101,18 @@
     <div class="footer-contents">       <!-- all info, address and links in the footer -->
      <ul class="footer-info">         <!-- all texts in information -->
       <h3> Information </h3>
-      <li><a href="#">FAQ</a></li>
-      <li><a href="#">Terms</a></li>
-      <li><a href="#">Support</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="support.html">Support</a></li>
      </ul>
       <ul class="footer-address">
         <h3> Address </h3>
-        <li><p id="address">This is the address</p></li>
+        <li><p id="address">Fullerton Avenue <br>North Vancouver <br>British Columbia <br>Canada</p></li>
       </ul>
       <ul class="footer-Contact">
         <h3> Contact Us </h3>
-        <li><a href="mailto:salehe@sfu.ca.com">Email</a></li>
-        <li><a href="tel:+16047792949">XXX-XXX-XXXX</a></li>
+        <li><a href="mailto:salehe@sfu.ca.com">Email: help@smartcell.com</a></li>
+        <li><a href="tel:+16047792949">604-779-0000</a></li>
       </ul>
     </div>
   </footer>   <!-- ///////////////////////////////////////////////Footer closed-->

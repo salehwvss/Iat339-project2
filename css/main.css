@@ -1,197 +1,150 @@
 body {
 	font-family: "Quan", Verdana, sans-serif;
-
-
 }
-
 h1 {
   margin-bottom: 0;
-
 }
-
 h2 {
 
-
 }
-
 h3 {
   text-decoration: underline;
-
+	text-decoration-color: #AD1D1D;
 }
-
 h4{
   font-size: .7em;
 }
-
+.top-margin-0{    /*set top margin to 0 for product titles*/
+	margin-top: 0;
+}
 ul {
   list-style-type: none;
 }
-
 img {
     width: 100%;
-    height: auto;
+    /*height: auto;*/
+		max-height: 250px;
 }
-
 div{
 	background-size: contain;
 }
-
-
-
 a{
   color:rgba(255,255,255,0.6);
   text-decoration: none;
 }
 
+hr{
+		border: 1px solid #AD1D1D;
+}
 a:hover, a:focus{
   color:rgba(255,255,255,0.9);
-  text-decoration: underline;
-
+  /*text-decoration: underline;*/
 }
-
 .main-header{
-  background-color: #0f8db3;
+  background-color: #333;
 }
-
 .header-wrapper{
 
-
 }
-
 .main-nav{
 
-
 }
-
 .header-logo{
 
-
-
 }
-
 .shop-button{
   display: inline-block;
-  padding: 0.5em 0.75em;
+  padding: 0.5em 2.38em;
   color: #FFF;
-  background-color: #0b5870;
+  background-color: #AD1D1D;
   border-radius: 0.25em;
   text-decoration: none;
   transition: background-color 0.5s ease-out;
   text-align: center;
 }
-
 .shop-button:hover, .shop-button:focus {
-  background-color: #3f95af;
+  background-color: #000000;
 }
-
-
 .account-button{
   display: inline-block;
   padding: 0.5em 0.75em;
   color: #FFF;
-  background-color: #0b5870;
+  background-color: #AD1D1D;
   border-radius: 0.25em;
   text-decoration: none;
   transition: background-color 0.5s ease-out;
-text-align: center;
+	text-align: center;
 }
-
 .account-button:hover, .account-button:focus {
-  background-color: #3f95af;
+  background-color: #000000;
 }
 .logo-img{
   max-width: 150px;
   max-height: 100px;
-
+	margin-right: 15em;
 }
-
 .home-gallery-slider{
 
-
 }
-
 .mySlides{
   max-width: 700px;
-  max-height: 500px;
-
+  max-height: 350px;
 }
-
 .home-wrapper{
 
-
-
 }
-
 .home-hr{
   margin-top: 0;
+
 }
-
-
 .home-products{
 
-
 }
-
 .products-img{
   /*width: 250px;*/
   height: 300px;
-
-
-
 }
-
 .footer-container{
   color: white;
-
-
 }
-
-
 .footer-contents{
   /*border: 1px solid #fff;*/
   background-color: #1a1b1c;
   /*height: 200px;*/
-
-
 }
-
-
 .footer-info{
   color: #FFF;
-
 }
-
-
 .footer-address{
 
 }
-
 #address{
   color:rgba(255,255,255,0.6);
 }
-
-
 .footer-Contact{
 
-
 }
-
 .show-more-button{
-  display: inline-block;
-  padding: 0.5em 0.75em;
-  color: #FFF;
-  background-color: #0b5870;
-  border-radius: 0.25em;
-  text-decoration: none;
-  transition: background-color 0.5s ease-out;
-  text-align: center;
-
+	display: inline-block;
+	padding: 0.5em 0.75em;
+	color: #FFF;
+	background-color: #AD1D1D;
+	border-radius: 0.25em;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+	text-align: center;
 }
-
+.terms-bg-style{
+	background-color: #EAE8E8;
+	padding: 5px;
+}
+.support-bg-style{
+	background-color: #EAE8E8;
+	padding: 5px;
+}
 .show-more-button:focus, .show-more-button:hover{
-  background-color: #3f95af;
+  background-color: #000000;
 }
-
 .add-to-cart{
   display: inline-block;
   padding: 0.5em 0.75em;
@@ -201,63 +154,78 @@ text-align: center;
   text-decoration: none;
   transition: background-color 0.5s ease-out;
   text-align: center;
-
 }
-
 .add-to-cart:hover, .add-to-cart:focus{
   background-color: #3f95af;
 }
-
-
 .product-detail-wrapper{
 
-
 }
-
-
 .products-detail-detail{
 
-
 }
-
-
 .checkout-wrapper{
 
 
 }
-
-
 .checkout-checkout{
 
 
 }
-
-
 .confirm-wrapper{
 
 
 }
-
-
 .confirm-wrapper{
 
 
 }
-
-
 .confirm-confirm{
 
-
 }
-
-
 .pay-wrapper{
 
-
 }
-
-
 .pay-pay{
 
+}
+/*------------------------------------------Login forms*/
+form {
+	display: block;
+  margin:0 auto;
+  width:300px;
+}
 
+.form-container{
+  padding: 16px;
+}
+#login-form{
+	margin-top: 2em;
+	margin-bottom: 14em;
+}
+#register-form{
+	margin-top: 2em;
+	margin-bottom: 14em;
+}
+input {
+  margin-bottom:3px;
+  padding:10px;
+  width: 100%;
+  border:1px solid #CCC
+}
+button {
+  padding:10px
+}
+#form-switch {
+  display:none
+}
+#register-form {
+  display:none
+}
+/*hide and show the register form depending on click on button*/
+#form-switch:checked~#register-form {
+  display:block
+}
+#form-switch:checked~#login-form {
+  display:none
 }

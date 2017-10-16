@@ -3,63 +3,114 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>Pay</title>
-
+  <title>Payment</title>
   <link rel="stylesheet" href="css/main.css">
-
-
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/flexbox.css">
 </head>
 
 <body>
-  <!-- ///////////////////////////////////////////// top header of my site -->
-  <header class="main-header">
-    <!-- top header containing logo, nav, account and cart -->
-    <div class="header-wrapper">
-      <!-- //////////////////////////////////Main navigation on top -->
-      <div class="main-nav">
-        <a href="#"> Shop</a>
-        <a href="#"> My Account</a>
+  <header class="main-header"> <!-- ///////////////////////////////////////////// top header of my site -->
+    <div class="header-wrapper">    <!-- top header containing logo, nav, account and cart -->
+      <div class="header-logo">      <!-- logo in header -->
+        <a href="index.html">
+        <img class="logo-img" src="img/img-placeholder.gif"> <!--image of logo -->
+        </a>
       </div>
-      <!-- //////////////////////////////////Main navigation on top closed -->
-    <div class="header-logo">      <!-- logo in header -->
-      <img src="img/img-placeholder.gif">   <!--image of logo -->
-    </div>
-    </div>
-    <!-- top header containing logo, nav, account and cart  closed -->
-  </header>
-  <!-- ///////////////////////////////////////////// top header of my site closed-->
+      <div class="main-nav">       <!-- //////////////////////////////////Main navigation on top -->
+        <a class="shop-button"href="products.html"> Shop</a>
+        <a class="account-button "href="#"> My Account</a>
+      </div>      <!-- //////////////////////////////////Main navigation on top closed -->
+    </div>     <!-- top header containing logo, nav, account and cart  closed -->
+  </header>   <!-- ///////////////////////////////////////////// top header of my site closed-->
+  <div class="home-wrapper"> <!-- a section containing products and tabs -->
+    <div class="home-products-wrapper"> <!-- a section containing only products  -->
+      <div class="home-products-text">
+  <div class="checkout-panel">
+    <div class="panel-body">
+      <h2 class="title">Checkout</h2>
 
-  <div class="pay-wrapper"> <!-- a section for paying -->
-    <h1>Checkout</h1>
-    <div class="pay-pay"> <!-- a section containing pay stuff  -->
+<!-- /////////////////////////////////////////////////////checkout forms and progress bar  -->
+      <div class="progress-bar">
+        <div class="step active"></div>
+        <div class="step active"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+      </div>
+      <div class="payment-method">
+        <label for="card" class="method card">
+          <div class="card-logos">
+            <img src="img/credit-logo.png"/>
+          </div>
+          <div class="radio-input">
+            <input id="card" type="radio" name="payment">
+            Pay $340.00 with credit card
+          </div>
+        </label>
+        <label for="paypal" class="method paypal">
+          <div class="card-logos">
+          <img src="img/paypal-logo.png"/>
+        </div>
+          <div class="radio-input">
+            <input id="paypal" type="radio" name="payment">
+            Pay $340.00 with PayPal
+          </div>
+        </label>
+      </div>
+      <div class="input-fields">
+        <div class="column-1">
+          <label for="cardholder">Cardholder's Name</label>
+          <input type="text" id="cardholder" />
+          <div class="small-inputs">
+            <div>
+              <label for="date">Valid thru</label>
+              <input type="text" id="date" placeholder="MM / YY" />
+            </div>
+            <div>
+              <label for="verification">CVV / CVC *</label>
+              <input type="password" id="verification"/>
+            </div>
+          </div>
+        </div>
+        <div class="column-2">
+          <label for="cardnumber">Card Number</label>
+          <input type="password" id="cardnumber"/>
+          <span class="info">* CVV or CVC is the card security code, unique three digits number on the back of your card separate from its number.</span>
+        </div>
+      </div>
+    </div>
 
+    <div class="panel-footer">
+      <a href="checkout.html">
+        <button class="btn back-btn">Back</button>
+      </a>
+      <a href="confirmation.html">
+        <button class="btn next-btn">Next Step</button>
+      </a>
     </div>
   </div>
-  <!-- ///////////////////////////////////////////////Footer -->
-  <footer class="footer-container">
+</div>
+ </div>
+ </div>
+
+  <footer class="footer-container">  <!-- ///////////////////////////////////////////////Footer -->
     <div class="footer-contents">       <!-- all info, address and links in the footer -->
-      <div class="footer-info">         <!-- all texts in information -->
+     <ul class="footer-info">         <!-- all texts in information -->
       <h3> Information </h3>
-      <a href="#">FAQ</a>
-      <a href="#">Terms</a>
-      <a href="#">Support</a>
-      </div>
-
-      <div class="footer-address">
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="support.html">Support</a></li>
+     </ul>
+      <ul class="footer-address">
         <h3> Address </h3>
-        <p>This is the address</p>
-      </div>
-
-      <div class="footer-Contact">
+        <li><p id="address">Fullerton Avenue <br>North Vancouver <br>British Columbia <br>Canada</p></li>
+      </ul>
+      <ul class="footer-Contact">
         <h3> Contact Us </h3>
-        <a href="mailto:salehe@sfu.ca.com">Email</a>
-        <a href="tel:+16047792949">XXX-XXX-XXXX</a>
-      </div>
-
+        <li><a href="mailto:salehe@sfu.ca.com">Email: help@smartcell.com</a></li>
+        <li><a href="tel:+16047792949">604-779-0000</a></li>
+      </ul>
     </div>
-  </footer>
-  <!-- ///////////////////////////////////////////////Footer closed-->
-
+  </footer>   <!-- ///////////////////////////////////////////////Footer closed-->
 </body>
 </html>

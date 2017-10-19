@@ -84,9 +84,22 @@
       <a href="checkout.html">
         <button class="btn back-btn">Back</button>
       </a>
-      <a href="confirmation.html">
-        <button class="btn next-btn">Next Step</button>
-      </a>
+        <button class="btn next-btn" onclick="myFunction()"id="payButton">Pay</button>
+        <!-- Function to check if user clicked on pay or cancel retrieved from: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_confirm3-->
+      <script>
+        function myFunction() {
+        var txt;
+        var r = confirm("By pressing on 'Pay' button,\nYou agreed on paying for the product");
+        if (r == true) {
+        window.location.href = "thanks.html";
+        } else {
+          window.location.href = "index.html";
+        }
+      }
+        document.getElementById("myButton").onclick = function () {
+
+        };
+       </script>
     </div>
   </div>
 </div>

@@ -104,6 +104,44 @@ a:hover, a:focus{
   /*width: 250px;*/
   height: 300px;
 }
+.products-detail-img{
+	height: 136px;
+	width: 136px;
+}
+/*retrieved from: https://css-tricks.com/zooming-background-images/*/
+.products-detail-img:hover{  /*zoom effect in prodcut-detail page*/
+ -ms-transform: scale(1.5);
+ -moz-transform: scale(1.5);
+ -webkit-transform: scale(1.5);
+ -o-transform: scale(1.5);
+ transform: scale(1.5);
+ -moz-transition: all 0.3s;
+ -webkit-transition: all 0.3s;
+ transition: all 0.3s;
+}
+.product-spec{
+	max-width: 450px;
+	background-color: rgb(239, 239, 239);
+	margin-right: 10px;
+	padding: 5px;
+}
+
+.product-checkout{
+	background-color: rgb(239, 239, 239);
+	padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.product-checkout-margins h2{
+	margin-right: 15px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.product-checkout-margins{
+	margin-top: 2em;
+}
 .footer-container{
   color: white;
 }
@@ -146,18 +184,19 @@ a:hover, a:focus{
   background-color: #000000;
 }
 .add-to-cart{
-  display: inline-block;
+	display: inline-block;
   padding: 0.5em 0.75em;
   color: #FFF;
-  background-color: #0b5870;
+  background-color: #AD1D1D;
   border-radius: 0.25em;
   text-decoration: none;
   transition: background-color 0.5s ease-out;
   text-align: center;
 }
 .add-to-cart:hover, .add-to-cart:focus{
-  background-color: #3f95af;
+  background-color: #000000;
 }
+
 .product-detail-wrapper{
 
 }
@@ -188,6 +227,11 @@ a:hover, a:focus{
 }
 .pay-pay{
 
+}
+
+.img-product-description{
+	width: 100%;
+	max-height: 100%;
 }
 /*------------------------------------------Login forms*/
 form {

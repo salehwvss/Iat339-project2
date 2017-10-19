@@ -16,11 +16,8 @@
 }
 
 .description-section{
-  display: flex;
-  justify-content: center;    /* Will set the horiontal allignment to center*/
-  padding: inherit;
+  padding: 10px 10px;
   background-color: #DADAD8;
-
 }
 
 .header-wrapper{
@@ -131,6 +128,9 @@
   padding: 10px;
 
 }
+.product-detail-description{
+    /*margin-left: 40%;*/
+}
 
 
 /* Mobile Styles */
@@ -157,7 +157,4 @@
 
   }
 
-  .product-detail-description{
-      margin-left: 50%;
-  }
 }

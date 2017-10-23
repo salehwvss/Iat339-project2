@@ -13,6 +13,8 @@
   flex-wrap: wrap;
   justify-content: center;    /* Will set the horiontal allignment to center*/
   padding: 20px 0;
+  max-height: 100px;
+
 }
 
 .description-section{
@@ -21,9 +23,9 @@
 }
 
 .header-wrapper{
-  width: 900px;
   display: flex;
-  /*justify-content: space-between;*/
+  width: 900px;
+  justify-content: space-between;
 }
 
 .main-nav, .account-button, .shop-button{
@@ -34,6 +36,31 @@
 }
 
 .home-gallery-slider{
+  display: flex;
+  align-items: center;          /* Will set the vertical allignment to center*/
+  justify-content: center;     /* Will set the horiontal allignment to center*/
+  margin-top: 2em;
+}
+.banner-img{
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  max-height: 200px;
+  padding: 10px;
+  border: 2px solid black ;
+}
+
+.banner-img2{
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  max-height: 200px;
+  padding: 10px;
+  margin:2px;
+  border: 2px solid black ;
+}
+
+.banner-ad{
   display: flex;
   align-items: center;          /* Will set the vertical allignment to center*/
   justify-content: center;     /* Will set the horiontal allignment to center*/
@@ -56,32 +83,33 @@
 
 .home-products{
   border: 1px solid #fff;
-  width: 300px;
-  /*height: 300px;*/
-  padding: 10px;
-
+  max-width: 300px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .products-detail-wrapper{
-  width: 900px;
+
   display: flex;
+  width: 900px;
   /*justify-content: flex-start;*/
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
 
 }
 
 .product-detail-description{
-  /*border: 1px solid #fff;*/
-  /*justify-content: flex-end;*/
-  /*width: 300px;
-  height: 300px;
-  margin-left: 50%;*/
-
+  background-color: rgb(239, 239, 239);
+  min-width: 170px;
+  padding-left: 10px;
+  padding-right: 10px;
 
 }
 
 .home-products-text{
   border: 1px solid #fff;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -128,19 +156,52 @@
   padding: 10px;
 
 }
-.product-detail-description{
-    /*margin-left: 40%;*/
-}
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   body {
     /*background-color: #F09A9D; /* Red */*/
+  }
+  .banner-ad, .banner-img, .banner-img2{
+    display: none;
+  }
+  .products-detail-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product-detail-description {
+    min-width: 352px;
+  }
+
+  .home-products-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home-products-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   body {
     /*background-color: #F5CF8E; /* Yellow */*/
+  }
+
+  .banner-ad, .banner-img, .banner-img2{
+    display: none;
+  }
+  .home-products-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home-products-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
 }

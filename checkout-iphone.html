@@ -3,8 +3,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>login</title>
+  <title>Checkout</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/forms.css">
   <link rel="stylesheet" href="css/flexbox.css">
 </head>
 
@@ -18,31 +19,55 @@
       </div>
       <div class="main-nav">       <!-- //////////////////////////////////Main navigation on top -->
         <a class="shop-button"href="products.html"> Shop</a>
-        <a class="account-button "href="#"> My Account</a>
+        <a class="account-button "href="login.html"> My Account</a>
       </div>      <!-- //////////////////////////////////Main navigation on top closed -->
     </div>     <!-- top header containing logo, nav, account and cart  closed -->
   </header>   <!-- ///////////////////////////////////////////// top header of my site closed-->
-
-  <input type='checkbox' id='form-switch'><!-- /////////////////////////////Login/registration forms -->
-  <form id='login-form' action="" method='post' style="border:1px solid #ccc;" >
-    <div class="form-container">
-      <input type="text" placeholder="Username" required>
-      <input type="password" placeholder="Password" required>
-      <button type='submit'>Login</button>
-      <label for='form-switch'><span>Register</span></label>
+  <div class="home-wrapper"> <!-- a section containing products and tabs -->
+    <div class="home-products-wrapper"> <!-- a section containing only products  -->
+      <div class="home-products-text">
+  <div class="checkout-panel">
+    <div class="panel-body">
+      <h2 class="title">Checkout</h2>
+<!-- /////////////////////////////////////////////////////checkout forms and progress bar  -->
+      <div class="progress-bar">
+        <div class="step active"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+      </div>
+      <h1>YOUR ORDER</h1>
+      <div class="product-checkout">
+        <div class="product-checkout-left-col">
+          <hr style="border: 0.7px solid black">
+          <h2>Product</h2>
+          <h2>Subtotal</h2>
+          <h2>Shipping</h2>
+          <h2>Total</h2>
+        </div>
+        <div class="divider"></div>
+        <div class="product-checkout-right-col">
+          <h5>Apple Iphone 8</h5>
+          <h5>$850</h5>
+          <h5>$20 Via DHL</h5>
+          <h5>$870</h5>
+        </div>
+        <hr style="margin-bottom:0px; border: 0.7px solid black ">
+      </div>
     </div>
-  </form>
-  <form id='register-form' action="" method='post' style="border:1px solid #ccc;">
-    <div class="form-container">
-      <input type="text" placeholder="Username" required>
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
-      <input type="password" placeholder="Re Password" required>
-      <button type='submit'>Register</button>
-      <label for='form-switch'>Already Member ? Sign In</label>
-    </div>
-  </form>   <!-- /////////////////////////////Login/registration forms closed-->
 
+    <div class="panel-footer">
+      <a href="product-detail2.html">
+        <button class="btn back-btn">Back</button>
+      </a>
+      <a href="pay.html">
+        <button class="btn next-btn">Next Step</button>
+      </a>
+    </div>
+  </div>
+</div>
+ </div>
+ </div>
   <footer class="footer-container">  <!-- ///////////////////////////////////////////////Footer -->
     <div class="footer-contents">       <!-- all info, address and links in the footer -->
      <ul class="footer-info">         <!-- all texts in information -->

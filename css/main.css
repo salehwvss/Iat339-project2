@@ -38,7 +38,6 @@ hr{
 }
 a:hover, a:focus{
   color:rgba(255,255,255,0.9);
-  /*text-decoration: underline;*/
 }
 .main-header{
   background-color: #333;
@@ -87,8 +86,8 @@ a:hover, a:focus{
 
 }
 .mySlides{
-  max-width: 700px;
-  max-height: 350px;
+  max-width: 900px;
+  max-height: 400px;
 }
 .home-wrapper{
 
@@ -103,10 +102,30 @@ a:hover, a:focus{
 .products-img{
   /*width: 250px;*/
   height: 300px;
+	border: 2px solid black ;
 }
 .products-detail-img{
 	height: 136px;
-	width: 136px;
+	max-width: 141px;
+	border: 2px solid black ;
+}
+.vl {
+    border-left: 6px solid green;
+    height: 100px;
+    position: relative;
+    /*left: 50%;*/
+    margin-left: 50%;
+    top: 0;
+
+}
+
+.thanks-bg{
+	background-color: rgb(239, 239, 239);
+	padding: 20px;
+	margin-top: 20px;
+}
+.thanks-bg p{
+
 }
 /*retrieved from: https://css-tricks.com/zooming-background-images/*/
 .products-detail-img:hover{  /*zoom effect in prodcut-detail page*/
@@ -120,25 +139,44 @@ a:hover, a:focus{
  transition: all 0.3s;
 }
 .product-spec{
-	max-width: 450px;
+	max-width: 420px;
 	background-color: rgb(239, 239, 239);
 	margin-right: 10px;
 	padding: 5px;
 }
 
 .product-checkout{
+	position: relative;
 	background-color: rgb(239, 239, 239);
 	padding-right: 5px;
   padding-bottom: 5px;
   padding-left: 5px;
 	margin-bottom: 0;
 	margin-top: 0;
+
 }
-.product-checkout-margins h2{
-	margin-right: 15px;
+.divider{
+    position:absolute;
+    left:50%;
+    top:10%;
+    bottom:10%;
+    border-left:1px solid black;
+}
+
+.product-checkout-left-col h2{
+	width: 80%;
+	float: left;
+	display: inline;
+	text-align: left;
 	margin-top: 0;
 	margin-bottom: 10px;
+	font-style: italic;
 }
+.product-checkout-right-col {
+	text-align: left;
+	font-style: italic;
+}
+
 .product-checkout-margins{
 	margin-top: 2em;
 }

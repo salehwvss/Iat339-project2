@@ -14,12 +14,12 @@
     <div class="header-wrapper">    <!-- top header containing logo, nav, account and cart -->
       <div class="header-logo">      <!-- logo in header -->
         <a href="index.html">
-        <img class="logo-img" src="img/img-placeholder.gif"> <!--image of logo -->
+        <img class="logo-img" src="img/home-logo.png"> <!--image of logo -->
         </a>
       </div>
       <div class="main-nav">       <!-- //////////////////////////////////Main navigation on top -->
         <a class="shop-button"href="products.html"> Shop</a>
-        <a class="account-button "href="#"> My Account</a>
+        <a class="account-button "href="login.html"> My Account</a>
       </div>      <!-- //////////////////////////////////Main navigation on top closed -->
     </div>     <!-- top header containing logo, nav, account and cart  closed -->
   </header>   <!-- ///////////////////////////////////////////// top header of my site closed-->
@@ -28,9 +28,8 @@
       <div class="home-products-text">
   <div class="checkout-panel">
     <div class="panel-body">
-      <h2 class="title">Checkout</h2>
-
-<!-- /////////////////////////////////////////////////////checkout forms and progress bar  -->
+      <h2 class="title">Payment</h2>
+<!-- /////////////////////////////////////////////////////payment forms and progress bar  -->
       <div class="progress-bar">
         <div class="step active"></div>
         <div class="step active"></div>
@@ -43,8 +42,8 @@
             <img src="img/credit-logo.png"/>
           </div>
           <div class="radio-input">
-            <input id="card" type="radio" name="payment">
             Pay $340.00 with credit card
+            <input id="card" type="radio" name="payment">
           </div>
         </label>
         <label for="paypal" class="method paypal">
@@ -52,8 +51,8 @@
           <img src="img/paypal-logo.png"/>
         </div>
           <div class="radio-input">
-            <input id="paypal" type="radio" name="payment">
             Pay $340.00 with PayPal
+            <input id="paypal" type="radio" name="payment">
           </div>
         </label>
       </div>
@@ -84,22 +83,9 @@
       <a href="checkout.html">
         <button class="btn back-btn">Back</button>
       </a>
+      <a href="thanks.html">
         <button class="btn next-btn" onclick="myFunction()"id="payButton">Pay</button>
-        <!-- Function to check if user clicked on pay or cancel retrieved from: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_confirm3-->
-      <script>
-        function myFunction() {
-        var txt;
-        var r = confirm("By pressing on 'Pay' button,\nYou agreed on paying for the product");
-        if (r == true) {
-        window.location.href = "thanks.html";
-        } else {
-          window.location.href = "index.html";
-        }
-      }
-        document.getElementById("myButton").onclick = function () {
-
-        };
-       </script>
+      </a>
     </div>
   </div>
 </div>

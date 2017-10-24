@@ -6,6 +6,8 @@
   <title>login</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/flexbox.css">
+  <link rel="stylesheet" href="css/forms.css">
+
 </head>
 
 <body>
@@ -23,26 +25,30 @@
     </div>     <!-- top header containing logo, nav, account and cart  closed -->
   </header>   <!-- ///////////////////////////////////////////// top header of my site closed-->
 
+
+  <div class="home-products-text">
+    <section class="login-box">
   <input type='checkbox' id='form-switch'><!-- /////////////////////////////Login/registration forms -->
-  <form id='login-form' action="" method='post' style="border:1px solid #ccc;" >
+  <form id='login-form' action="" method='post' style="border:1px solid #ccc; width:600px;" >
     <div class="form-container">
       <input type="text" placeholder="Username" required>
       <input type="password" placeholder="Password" required>
-      <button type='submit'>Login</button>
-      <label for='form-switch'><span>Register</span></label>
+      <button type='submit'; style="color:white;">Login</button>
+      <label style="cursor: pointer;" for='form-switch'><span>Register</span></label>
     </div>
   </form>
-  <form id='register-form' action="" method='post' style="border:1px solid #ccc;">
+  <form id='register-form' action="" method='post' style="border:1px solid #ccc;  width:600px;">
     <div class="form-container">
       <input type="text" placeholder="Username" required>
       <input type="email" placeholder="Email" required>
       <input type="password" placeholder="Password" required>
       <input type="password" placeholder="Re Password" required>
-      <button type='submit'>Register</button>
-      <label for='form-switch'>Already Member ? Sign In</label>
+      <button type='submit'; style="color:white;">Register</button>
+      <label style="cursor: pointer;"for='form-switch'>Already Member ? Sign In</label>
     </div>
   </form>   <!-- /////////////////////////////Login/registration forms closed-->
-
+ </div>
+</section>
   <footer class="footer-container">  <!-- ///////////////////////////////////////////////Footer -->
     <div class="footer-contents">       <!-- all info, address and links in the footer -->
      <ul class="footer-info">         <!-- all texts in information -->

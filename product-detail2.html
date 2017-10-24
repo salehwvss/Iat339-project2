@@ -19,8 +19,13 @@
       </a>
       </div>
       <div class="main-nav">       <!-- //////////////////////////////////Main navigation on top -->
+
         <a class="shop-button "href="products.html"> Shop</a>
         <a class="account-button "href="login.html" id="MyAccount"> My Account</a>
+        <a href="checkout-iphone.html">
+          <img class="shopping-cart"src="img/shopping-cart.png">
+        </a>
+          <a id="cartQuantity" style="color:#AD1D1D;"></a> <!-- quantity added to cart -->
       </div>      <!-- //////////////////////////////////Main navigation on top closed -->
     </div>     <!-- top header containing logo, nav, account and cart  closed -->
   </header>   <!-- ///////////////////////////////////////////// top header of my site closed-->
@@ -57,8 +62,8 @@
         <h4>SKU: 32822099865</h4>
         <h4>Price: $850</h4>
         <h4>Delivery method: DHL</h4>
-        <h4>Quantity<input type="number" name="quantity" min="1" max="5" value="1"></h4><!-- Retrieved from: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_number -->
-        <a class="add-to-cart"href="checkout-iphone.html">Add To Cart</a>   <!--once you click this button, product will be added to cart -->
+        <h4>Quantity<input id="myNumber" type="number" name="quantity" min="1" max="5" value="1" ></h4><!-- Retrieved from: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_number -->
+        <a class="add-to-cart" onclick="myFunction()">Add To Cart</a>   <!--once you click this button, product will be added to cart -->
       </div>
     </div>
   </div>
@@ -100,3 +105,9 @@
 
 </body>
 </html>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myNumber").value;
+    document.getElementById("cartQuantity").innerHTML = x;
+  }
+</script>

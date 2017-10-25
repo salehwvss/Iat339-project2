@@ -44,7 +44,7 @@
 .banner-img{
   display: flex;
   align-items: center;
-  max-width: 500px;
+  max-width: 450px;
   max-height: 200px;
   padding: 10px;
   border: 2px solid black ;
@@ -53,7 +53,7 @@
 .banner-img2{
   display: flex;
   align-items: center;
-  max-width: 400px;
+  max-width: 450px;
   max-height: 200px;
   padding: 10px;
   margin:2px;
@@ -102,6 +102,7 @@
 .product-detail-description{
   background-color: rgb(230, 237, 241);
   min-width: 170px;
+  max-height: 390px;
   padding-left: 10px;
   padding-right: 10px;
 
@@ -137,7 +138,8 @@
 	display: -webkit-flex;
 	display: flex;
   justify-content: center;
-  background-color: #EAE8E8;
+  background-color: rgb(230, 237, 241);
+  margin-bottom: 4em;
 }
 
 .faq-content-left{
@@ -163,14 +165,12 @@
   }
   .banner-ad, .banner-img, .banner-img2{
     display: none;
+
   }
   .products-detail-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .product-detail-description {
-    min-width: 352px;
   }
 
   .home-products-wrapper{

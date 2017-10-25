@@ -30,21 +30,7 @@
     <img class="mySlides" src="img/galaxys8-gal.jpg">
     <img class="mySlides" src="img/nexus.jpg">
   </div>
-  <script>
-  var myIndex = 0;
-  carousel();
-  function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}
-      x[myIndex-1].style.display = "block";
-      setTimeout(carousel, 2000); // Change image every 2 seconds
-  }
-  </script>
+
 
   <div class="banner-ad">
     <img class="banner-img" src="img/products/iphone8-ad1.png">
@@ -124,5 +110,6 @@
       </ul>
     </div>
   </footer>   <!-- ///////////////////////////////////////////////Footer closed-->
+  <script src="js/javascript.js"></script>
 </body>
 </html>

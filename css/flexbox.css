@@ -60,7 +60,33 @@
   border: 2px solid black ;
 }
 
+.reference-img{
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+  max-height: 200px;
+  padding: 10px;
+  border: 2px solid black ;
+}
+
+.stylesheet-img2{
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+  max-height: 200px;
+  padding: 10px;
+  margin:2px;
+  border: 2px solid black ;
+}
+
 .banner-ad{
+  display: flex;
+  align-items: center;          /* Will set the vertical allignment to center*/
+  justify-content: center;     /* Will set the horiontal allignment to center*/
+  margin-top: 2em;
+}
+
+.banner-ad-ref{
   display: flex;
   align-items: center;          /* Will set the vertical allignment to center*/
   justify-content: center;     /* Will set the horiontal allignment to center*/

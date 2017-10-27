@@ -118,12 +118,11 @@ a:hover, a:focus{
 	border: 2px solid black ;
 }
 .vl {
-    border-left: 6px solid green;
-    height: 100px;
-    position: relative;
-    /*left: 50%;*/
-    margin-left: 50%;
-    top: 0;
+  border-left: 6px solid green;
+  height: 100px;
+  position: relative;
+  margin-left: 50%;
+  top: 0;
 
 }
 
@@ -137,14 +136,14 @@ a:hover, a:focus{
 }
 /*retrieved from: https://css-tricks.com/zooming-background-images/*/
 .products-detail-img:hover{  /*zoom effect in prodcut-detail page*/
- -ms-transform: scale(1.5);
- -moz-transform: scale(1.5);
- -webkit-transform: scale(1.5);
- -o-transform: scale(1.5);
- transform: scale(1.5);
- -moz-transition: all 0.3s;
- -webkit-transition: all 0.3s;
- transition: all 0.3s;
+ 	-ms-transform: scale(1.5);
+ 	-moz-transform: scale(1.5);
+ 	-webkit-transform: scale(1.5);
+ 	-o-transform: scale(1.5);
+ 	transform: scale(1.5);
+ 	-moz-transition: all 0.3s;
+ 	-webkit-transition: all 0.3s;
+ 	transition: all 0.3s;
 }
 .product-spec{
 	max-width: 420px;
@@ -155,7 +154,7 @@ a:hover, a:focus{
 }
 
 .product-checkout{
-	position: relative;
+  position: relative;
 	background-color: rgb(230, 237, 241);
 	padding-right: 5px;
   padding-bottom: 5px;
@@ -165,11 +164,11 @@ a:hover, a:focus{
 
 }
 .divider{
-    position:absolute;
-    left:50%;
-    top:10%;
-    bottom:10%;
-    border-left:1px solid black;
+  position:absolute;
+  left:50%;
+  top:10%;
+  bottom:10%;
+  border-left:1px solid black;
 }
 
 .product-checkout-left-col h2{

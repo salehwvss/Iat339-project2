@@ -2,16 +2,18 @@ body {
 	font-family: "Quan", Verdana, sans-serif;
 }
 h1 {
+	font-family: Lucida Grande;
 	font-size: 1.5em;
   margin-bottom: 0;
 }
 h2 {
-
+font-family: Lucida Grande;
 }
 p{
 	font-size: 0.7em;
 }
 h3 {
+	font-family: Lucida Grande;
 	text-decoration-color: #AD1D1D;
 }
 h4{
@@ -108,9 +110,18 @@ a:hover, a:focus{
 
 }
 .products-img{
-  /*width: 250px;*/
   height: 300px;
 	border: 2px solid black ;
+}
+
+.products-img:hover{
+	opacity: .7;
+	-ms-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	transform: scale(0.9);
+	border: 2px solid #AD1D1D ;
 }
 .products-detail-img{
 	height: 136px;

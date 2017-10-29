@@ -21,6 +21,9 @@
   padding: 10px 10px;
   background-color: rgb(230, 237, 241);
 }
+.description-section p{
+  font-size: 0.9em;
+}
 
 .header-wrapper{
   display: flex;
@@ -128,7 +131,7 @@
 .product-detail-description{
   background-color: rgb(230, 237, 241);
   min-width: 170px;
-  max-height: 390px;
+  /*max-height: 390px;*/
   padding-left: 10px;
   padding-right: 10px;
 

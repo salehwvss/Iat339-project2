@@ -110,8 +110,10 @@ a:hover, a:focus{
 
 }
 .products-img{
-  height: 300px;
+	height: 240px;
+  max-height: 300px;
 	border: 2px solid black ;
+
 }
 
 .products-img:hover{
@@ -122,11 +124,16 @@ a:hover, a:focus{
 	-o-transform: scale(0.9);
 	transform: scale(0.9);
 	border: 2px solid #AD1D1D ;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
 }
 .products-detail-img{
-	height: 136px;
+	max-height: 136px;
 	max-width: 141px;
 	border: 2px solid black ;
+
 }
 .vl {
   border-left: 6px solid green;
@@ -158,11 +165,16 @@ a:hover, a:focus{
 }
 .product-spec{
 	max-width: 420px;
-	max-height: 390px;
+	/*max-height: 390px;*/
 	background-color: rgb(230, 237, 241);
 	margin-right: 10px;
 	padding: 5px;
 }
+.product-spec p{
+	font-size: 0.8em;
+}
+
+
 
 .product-checkout{
   position: relative;
